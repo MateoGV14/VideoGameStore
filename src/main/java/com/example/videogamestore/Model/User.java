@@ -10,6 +10,7 @@ import lombok.RequiredArgsConstructor;
 @Data
 @Entity
 @RequiredArgsConstructor
+@Table(name= "users")
 public class User {
 
     @Id
@@ -31,7 +32,7 @@ public class User {
     @Size(max = 120)
     private String password;
 
-//    @ManyToOne
+//   @ManyToOne
 //    @JoinColumn(name = "role_id")
 //    private Role role;
 }
